@@ -47,4 +47,5 @@ class Application
     else
       return "We don't have that item"
     end
+  end
 end
