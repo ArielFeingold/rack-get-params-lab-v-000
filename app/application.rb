@@ -48,12 +48,12 @@ class Application
     end
   end
 
-  def handle_add(item)
-    if @@items.include?(item)
-      @@cart << item
-      return "added #{item}"
-    else
-      return "We don't have that item"
-    end
-  end
-end
+#   def handle_add(item)
+#     if @@items.include?(item)
+#       @@cart << item
+#       return "added #{item}"
+#     else
+#       return "We don't have that item"
+#     end
+#   end
+# end
