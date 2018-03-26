@@ -1,3 +1,5 @@
+require 'pry'
+
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
@@ -26,7 +28,7 @@ class Application
       item = req.params["q"]
 
       if @@items.include?(item)
-        pry
+        binding.pry
         @@cart << item
         resp.write "added #{item}"
       else
