@@ -18,7 +18,8 @@ class Application
       if @@cart.length = 0
         resp.write "Your cart is empty"
       else
-        resp.write @@cart
+        @@cart.each do |i|
+          resp.write "#{i}\n"
       end
     # elsif req.path.match(/add/)
 
