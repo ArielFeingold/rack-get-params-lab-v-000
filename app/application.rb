@@ -43,7 +43,7 @@ class Application
   def handle_add(item)
     if @@items.include?(item)
       @@cart << item
-      return "Item added to your cart"
+      return "added #{item}"
     else
       return "We don't have that item"
     end
