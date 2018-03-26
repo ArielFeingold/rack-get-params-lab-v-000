@@ -26,6 +26,7 @@ class Application
       item = req.params["q"]
 
       if @@items.include?(item)
+        pry
         @@cart << item
         resp.write "added #{item}"
       else
