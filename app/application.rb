@@ -20,6 +20,7 @@ class Application
       else
         @@cart.each do |i|
           resp.write "#{i}\n"
+        end
       end
     # elsif req.path.match(/add/)
 
