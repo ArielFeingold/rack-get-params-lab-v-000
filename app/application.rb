@@ -22,8 +22,13 @@ class Application
           resp.write "#{i}\n"
         end
       end
-    # elsif req.path.match(/add/)
-
+    elsif req.path.match(/add/)
+      search_term = req.params["i"]
+      if @@items.include?(i)
+        @@cart << i
+      else
+        resp.write "We don't have that item"
+      end
     else
       resp.write "Path Not Found"
     end
